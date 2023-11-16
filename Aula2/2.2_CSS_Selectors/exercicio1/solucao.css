@@ -1,0 +1,34 @@
+*{
+    font-family: 'Fira Code', monospace;
+}
+ol {
+
+    text-align: center;
+}
+
+li a {
+    color: red;
+    font-size: 13px;
+}
+
+.nots {
+    color: black;
+    font-size: 24px;
+}
+
+#sulbahia {
+    color: greenyellow;
+    font-size: 20px;
+}
+
+#id1 {
+    font-size: 16px;
+}
+
+#id2{
+    font-size: 28px;
+}
+
+#id3{
+    font-size: 24px;
+}

@@ -1,0 +1,31 @@
+h2 {
+    color: orange;
+}
+
+h5 {
+    color: orange;
+}
+
+div p{
+    color: blue;
+}
+
+li {
+    position: sticky;
+    left: 30%;
+    top: 20%;
+    color: rgb(240, 90, 4);
+}
+
+.usada {
+    color: purple;
+    font-weight: 700;
+}
+
+.alimentos {
+    color: aqua;
+}
+
+.moveis .usada{
+    color: greenyellow;
+}
