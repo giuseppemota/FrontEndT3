@@ -9,20 +9,17 @@ export class AcessoComponent {
   permitions = ["root", "admin", "user"];
   login: string = "";
   btnDisabled: boolean = true;
-  onLogando(){
+  onLogando() {
 
-    if(this.login == "root"){
-      this.btnDisabled = false;
+    if (this.permitions.includes(this.login)) {
+      this.btnDisabled = false
+    }
 
-    }
-    else if(this.login == "admin"){
-      this.btnDisabled = false;
-    }
-    else if(this.login == "user"){
-      this.btnDisabled = false;
-    }
-    else(
+    else (
       this.btnDisabled = true
     )
+  }
+  onClick() {
+    alert("Acesso liberado")
   }
 }
