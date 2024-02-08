@@ -1,0 +1,13 @@
+<form [formGroup]="FormTest" (ngSubmit)="onSubmit()">
+    <label for="name">Name:</label><br>
+    <input id="name" formControlName="name">
+    <label for="email">E-mail:</label><br>
+    <input id="email" formControlName="email">
+    <label for="status">Status da instalação:</label>
+    <select name="status" id="status" formControlName="status">
+        <option value="nao">Não Instalada</option>
+        <option value="sim">Instalada</option>
+        <option value="op">Operante</option>
+    </select>
+    <button>Se inscreva</button>
+</form>
