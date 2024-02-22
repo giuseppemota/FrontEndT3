@@ -4,6 +4,15 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class BankService {
+  private atendimentos: any[] = []; // Array para armazenar os objetos
 
-  constructor() { }
+  constructor() {}
+
+  salvarAtendimento(atendimento: any) {
+    this.atendimentos.push(atendimento);
+  }
+
+  obterAtendimentos() {
+    return this.atendimentos;
+  }
 }
