@@ -1,3 +1,27 @@
-<ul>
-    <li *ngFor="let atendimento of loadedAtemdimentos">{{atendimento.petName}}</li>
-</ul>
+<p *ngIf="loadedAtendimentos.length < 1">Não existem passagens cadastradas!</p>
+<table class="tickets-table" *ngIf="loadedAtendimentos.length >=1">
+    <thead>
+        <tr>
+            <th>Nome do passageiro: </th>
+            <th>Número do vôo</th>
+            <th>Data da partida: </th>
+            <th>Data da chegada: </th>
+            <th>Aeroporto de Partida: </th>
+            <th>Aeroporto de Chegada: </th>
+            <th><button (click)="apagarTudo()">Apagar Tudo</button></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let atendimento of loadedAtendimentos">
+            <td>{{ atendimento.dateAtendimento }}</td>
+            <td>{{ atendimento.especie }}</td>
+            <td>{{ atendimento.petName }}</td>
+            <td>{{ atendimento.race }}</td>
+            <td>{{ atendimento.tutorName }}</td>
+            <td colspan="1">{{ atendimento.obs }}</td>
+
+            <td><button type="button" class="btnEditar"
+                    routerLink="/editarAtendimento/{{atendimento.id}}">Editar</button></td>
+        </tr>
+    </tbody>
+</table>
